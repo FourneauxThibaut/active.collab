@@ -1,0 +1,70 @@
+/* Setup Variables */
+
+:root {
+    --gray-50: #f8f8f8;
+    --gray-300: #E9EDF2;
+    --gray-500: #B0B5BF;
+    --gray-700: #3F4655;
+    --gray-900: #242831;
+    --blue: #3093F7;
+}
+
+/* Some basic Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+    color: inherit;
+    list-style: inherit;
+    text-decoration: inherit;
+}
+
+/* Global change */
+
+body{
+    background-color: var(--gray-50);
+}
+
+/* Header */
+
+header nav{
+    min-height: 60px;
+    max-height: 120px;
+    background-color: rebeccapurple;
+}
+header nav ul h3{
+font-weight: inherit;
+}
+header nav ul{
+    display: flex;
+    flex-direction:row;
+    font-size: 1.3rem;
+}
+header nav ul li:first-child{
+    display: flex;
+    flex-direction:row;
+}
+header nav ul li:first-child img{
+    height: 15px;
+}

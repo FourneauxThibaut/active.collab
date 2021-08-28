@@ -87,8 +87,17 @@ header nav a:hover:after{
   right: auto;
   width: 100%;
 }
-header nav a:last-child, a:nth-last-child(2){
-  background-color: forestgreen;
+header nav ul:last-child li:last-child a:hover:after{
+  width: 0%;
+}
+header nav ul:last-child li:last-child div:first-child:hover{
+  background-color: var(--gray-700);
+}
+header nav ul:last-child li:last-child div a:first-child:hover{
+  color: var(--gray-50);
+}
+header nav ul:last-child li:last-child div:last-child a:hover{
+  color: var(--blue);
 }
 header nav ul h3{
   font-weight: inherit;

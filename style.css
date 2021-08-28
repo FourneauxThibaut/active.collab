@@ -61,6 +61,35 @@ header nav{
   min-height: 60px;
   max-height: 120px;
 }
+header nav a{
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+header nav a:hover{
+  color: var(--blue);
+}
+header nav a:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: var(--blue);
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+header nav a:hover:after{
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+header nav a:last-child, a:nth-last-child(2){
+  background-color: forestgreen;
+}
 header nav ul h3{
   font-weight: inherit;
 }
@@ -179,6 +208,11 @@ header nav ul:last-child li:last-child div:last-child{
   border-radius: 5px;
   background-color: var(--blue);
   color: var(--gray-50);
+  transition-duration: 0.5s;
+}
+.call-to-action a:hover{
+  background-color: var(--gray-700);  
+  transition-duration: 0.5s;
 }
 .call-to-action p:last-child{
   margin-top: 32px;
@@ -256,6 +290,11 @@ header nav ul:last-child li:last-child div:last-child{
   border-radius: 5px;
   border: 1px solid var(--gray-900);
   background-color: var(--blue);
+  transition-duration: 0.5s;
+}
+.cloud-icons-container ul li a:hover{
+  background-color: var(--gray-700);  
+  transition-duration: 0.5s;
 }
 .cloud-icons-container ul li p:last-child{
   margin-bottom: 50px;
@@ -284,11 +323,17 @@ header nav ul:last-child li:last-child div:last-child{
   margin: 80px auto 120px;
   width: 75%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .our-client-container ul li a *{
   font-size: 4rem;
   color: var(--gray-500);
+  transition-duration: 0.5s;
+}
+.our-client-container ul li a *:hover{
+  color: var(--blue);  
+  transition-duration: 0.5s;
 }
 
 /* sign in */
@@ -336,6 +381,12 @@ header nav ul:last-child li:last-child div:last-child{
   width: 45%;
   color: var(--gray-50);
   background-color: var(--blue);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.sign-in-container input[type=submit]:hover{
+  background-color: var(--gray-700);  
+  transition-duration: 0.5s;
 }
 .sign-in-container div{
   color: var(--gray-600) !important;
@@ -351,6 +402,11 @@ header nav ul:last-child li:last-child div:last-child{
 .sign-in-container div a{
   text-decoration: underline;
   font-size: 1.1rem;
+  transition-duration: 0.5s;
+}
+.sign-in-container div a:hover{
+  color: var(--blue);  
+  transition-duration: 0.5s;
 }
 
 /* --------------- footer --------------- */
@@ -373,10 +429,20 @@ footer{
 .link-container ul li{
   margin: 7px 0;
   color: var(--gray-50);
+  transition-duration: 0.5s;
 }
-.social-icon{
+.link-container ul li:hover{
+  color: var(--blue);  
+  transition-duration: 0.5s;
+}
+.social-icon ul li{
   font-size: 3rem;
   color: var(--gray-500);
+  transition-duration: 0.5s;
+}
+.social-icon ul li:hover{
+  color: var(--blue);  
+  transition-duration: 0.5s;
 }
 .social-icon ul{
   margin: 60px auto 35px;

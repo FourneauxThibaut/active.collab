@@ -174,11 +174,11 @@
             <p> Enter your details to get a month of Active Collab absolutely free, without any limitations. </p>
             <form action="#" method="post">
                 <label for="name">Your Name or organization</label>
-				<input name="name" type="text" placeholder="enter anme or organization"/>
+				<input name="name" type="text" placeholder="enter anme or organization" required/>
                 <label for="email">Email</label>
-				<input name="email" type="email" placeholder="name@organization.com"/>
+				<input name="email" type="email" placeholder="name@organization.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
                 <label for="password">Password</label>
-				<input name="Password" type="password" placeholder="The longer, the stronger"/>
+				<input name="Password" type="password" placeholder="The longer, the stronger" required/>
 				<input type="submit" value="Start my free month!">
                 <p>Hope you'ill enjoy it!</p>
 			</form>

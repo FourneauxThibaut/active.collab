@@ -157,6 +157,52 @@ header nav ul:last-child li:last-child div:last-child{
   background-color: var(--gray-50);
 }
 
+@media (max-width: 1700px){
+  header nav ul:first-child{
+    width: 35%;
+  }  
+  header nav ul:last-child{
+    width: 38%;
+  }
+}
+@media (max-width: 1550px){
+  header nav ul:first-child{
+    width: 40%;
+  }  
+  header nav ul:last-child{
+    width: 45%;
+  }
+}
+@media (max-width: 1300px){
+  header nav ul:first-child{
+    width: 45%;
+  }  
+  header nav ul:last-child{
+    width: 50%;
+  }
+}
+@media (max-width: 1115px){
+  header nav ul:first-child{
+    width: 48%;
+  }  
+  header nav ul:last-child{
+    width: 52%;
+  }
+}
+@media (max-width: 1060px){
+  header nav{
+    flex-direction: column;
+  }
+  header nav ul{
+    flex-direction: column;
+    width: 100% !important;
+  }
+  header nav ul li{
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
 /* --------------- main --------------- */
 /* Heroes */
 
@@ -242,6 +288,75 @@ header nav ul:last-child li:last-child div:last-child{
   border-bottom: 1px solid var(--gray-300);
   filter: drop-shadow(3px 0px 10px var(--gray-500));
 }
+@media (max-width: 1522px){
+  .main-icons-container ul li:nth-last-child(2){
+    border-right: none;
+  }
+}
+@media (max-width: 1250px){
+  .mosaic-bg{
+    background-image: none !important;
+  }
+}
+@media (max-width: 1129px){
+  .main-icons-container ul li:nth-child(odd){
+    border-right: 1px solid var(--gray-900);
+  }
+  .main-icons-container ul li:nth-child(even){
+    border-right: none;
+  }
+}
+@media (max-width: 1060px){
+  .main-container{
+    margin-top: 350px;
+  }
+  .mosaic-bg img{
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
+@media (max-width: 860px){
+  .call-to-action{
+    width: 60%;
+  }
+  .mosaic-bg{
+    margin-top: -10px;
+  }
+}
+@media (max-width: 752px){
+  .main-icons-container ul li{
+    border-right: none !important;
+  }
+}
+@media (max-width: 550px){
+  .call-to-action{
+    width: 70%;
+  }
+  .call-to-action a{
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 429px){
+  .call-to-action{
+    width: 75%;
+  }
+  .call-to-action a{
+    padding: 7px 17px;
+  }
+  .mosaic-bg img{
+    padding: 0 25px;
+  }
+}
+@media (max-width: 540px){
+  *{
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 400px){
+  *{
+    font-size: 0.8rem;
+  }
+}
 
 /* cloud */
 
@@ -271,6 +386,7 @@ header nav ul:last-child li:last-child div:last-child{
   margin: 0 auto;
   width: 45%;
   display: flex;
+  flex-wrap: wrap;
 }
 .cloud-icons-container ul li:first-child{
   border-right: 2px solid var(--gray-400);
@@ -309,6 +425,41 @@ header nav ul:last-child li:last-child div:last-child{
   margin-bottom: 50px;
   font-style: italic;
 }
+@media (max-width: 1200px){
+  .cloud-icons-container ul{
+    flex-direction: column;
+  } 
+  .cloud-icons-container ul li{
+    margin: 0 auto;
+  } 
+  .cloud-icons-container ul li:first-child{
+    border-right: none;
+  }
+}
+@media (max-width: 899px){
+  .cloud-icons-container ul li{
+    width: 65% !important;
+}
+  .cloud-icons-container ul li a{
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 643px){
+  .cloud-icons-container ul li{
+    width: 75% !important;
+}
+  .cloud-icons-container ul li a{
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 475px){
+  .cloud-icons-container ul li{
+    width: 95% !important;
+  }
+  .cloud-icons-container ul li a{
+    padding: 5px 7px;
+  }
+}
 
 /* our clients */
 
@@ -343,6 +494,29 @@ header nav ul:last-child li:last-child div:last-child{
 .our-client-container ul li a *:hover{
   color: var(--blue);  
   transition-duration: 0.5s;
+}
+@media (max-width: 900px){
+  .our-client-container ul {
+    flex-direction: column;
+  }
+  .our-client-container ul li{
+    margin: 15px 0;
+  }
+}
+@media (max-width: 720px){
+  .our-client-text {
+    width: 60% !important;
+  }
+}
+@media (max-width: 480px){
+  .our-client-text {
+    width: 70% !important;
+  }
+}
+@media (max-width: 400px){
+  .our-client-text {
+    width: 80% !important;
+  }
 }
 
 /* sign in */
@@ -392,6 +566,9 @@ header nav ul:last-child li:last-child div:last-child{
   background-color: var(--blue);
   cursor: pointer;
   transition-duration: 0.5s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .sign-in-container input[type=submit]:hover{
   background-color: var(--gray-700);  
@@ -416,6 +593,52 @@ header nav ul:last-child li:last-child div:last-child{
 .sign-in-container div a:hover{
   color: var(--blue);  
   transition-duration: 0.5s;
+}
+
+@media (max-width: 1200px){
+  .sign-in-container form{
+    width: 45%;
+  }
+}
+@media (max-width: 800px){
+  .sign-in-container form{
+    width: 60%;
+  }
+}
+@media (max-width: 720px){
+  .sign-in-container h2, p {
+    margin: 0 auto;
+    width: 60% !important;
+  }
+}
+@media (max-width: 600px){
+  .sign-in-container form{
+    width: 70%;
+  }
+}
+@media (max-width: 500px){
+  .sign-in-container form{
+    width: 80%;
+  }
+  .sign-in-container input{
+    font-size: 1rem;
+    padding: 0 8px;
+  }
+}
+@media (max-width: 480px){
+  .sign-in-container h2, p {
+    width: 70% !important;
+  }
+}
+@media (max-width: 425px){
+  .sign-in-container form{
+    width: 90%;
+  }
+}
+@media (max-width: 400px){
+  .sign-in-container h2, p {
+    width: 80% !important;
+  }
 }
 
 /* --------------- footer --------------- */
@@ -462,4 +685,36 @@ footer{
 .social-icon p{
   font-size: 1.2rem;
   color: var(--gray-600);
+}
+@media (max-width: 1550px){
+  .link-container{
+    flex-direction: column !important;
+  }
+  footer ul li, h5{
+    text-align: center;
+  }
+  .social-icon ul{
+    width: 35%;
+  }
+}
+@media (max-width: 1080px){
+  .social-icon ul{
+    width: 45%;
+  }
+}
+@media (max-width: 750px){
+  .social-icon ul{
+    width: 60%;
+  }
+}
+@media (max-width: 580px){
+  .social-icon ul{
+    flex-direction: column;
+  }
+}
+@media (max-width: 540px){
+  .social-icon ul li a > *{
+    font-size: 2.5rem;
+    margin: 8px 0;
+  }
 }

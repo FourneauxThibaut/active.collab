@@ -278,7 +278,7 @@ header nav ul:last-child li:last-child div:last-child{
   margin: 100px auto 0;
   display: flex;
   justify-content: center;
-  background-image: url(./medley-icon-fond.svg);
+  background-image: url(../storage/medley-icon-fond.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
